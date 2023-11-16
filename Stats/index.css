@@ -1,0 +1,24 @@
+.STATSBG {
+  width: 100%;
+  background-color: red;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.STATSBG .clientTestimonial .clientBox {
+  width: 60%;
+  height: 400px;
+  background-color: white;
+  position: relative;
+}
+.STATSBG .clientTestimonial .clientBox .pictureIcon {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  position: absolute;
+  bottom: -25px;
+}
+.STATSBG .clientTestimonial .clientBox .pictureIcon img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}/*# sourceMappingURL=index.css.map */
