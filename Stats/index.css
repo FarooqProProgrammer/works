@@ -1,14 +1,66 @@
+.counterSection {
+  width: 80%;
+  display: flex;
+  background-color: black;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 5px;
+  position: relative;
+  bottom: -15px;
+}
+@media (max-width: 750px) {
+  .counterSection {
+    flex-direction: column;
+  }
+}
+.counterSection .counterBox {
+  flex: 1;
+  gap: 2;
+}
+.counterSection .counterBox h2 {
+  color: white;
+  font-size: 50px;
+}
+.counterSection .counterBox p {
+  color: white;
+}
+
 .STATSBG {
   width: 100%;
   background-color: red;
   padding-bottom: 10px;
   padding-top: 10px;
 }
+.STATSBG .StatsContent {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.STATSBG .StatsContent h2 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 40px;
+}
+.STATSBG .StatsContent p {
+  color: white;
+}
 .STATSBG .clientTestimonial .clientBox {
   width: 60%;
   height: 400px;
   background-color: white;
   position: relative;
+  border-radius: 10px;
+}
+@media (max-width: 800px) {
+  .STATSBG .clientTestimonial .clientBox {
+    width: 80%;
+  }
+}
+@media (max-width: 560px) {
+  .STATSBG .clientTestimonial .clientBox {
+    width: 99%;
+  }
 }
 .STATSBG .clientTestimonial .clientBox .pictureIcon {
   width: 80px;
