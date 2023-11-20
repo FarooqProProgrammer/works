@@ -1,0 +1,20 @@
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/utilities";
+
+
+.navbar  {
+  width: 95%;
+  position: absolute;
+  right: 0;
+  padding: 0px !important;
+  padding-right: 0px !important;
+}
+
+
+.Services {
+    background-image: url('https://images.unsplash.com/photo-1700427296131-0cc4c4610fc6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNXx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+}
+@import './node_modules/bootstrap/scss/bootstrap.scss'
