@@ -28,14 +28,14 @@
 .Banner::after {
   content: "";
   position: absolute;
-  width: 41%;
+  width: 47%;
   height: 100%;
   background-color: red;
   opacity: 0.5;
   -webkit-clip-path: polygon(31% 0%, 100% 0%, 56% 100%, -20% 100%);
           clip-path: polygon(31% 0%, 100% 0%, 56% 100%, -20% 100%);
   top: 0px;
-  left: 198px;
+  left: 173px;
 }
 @media (max-width: 1280px) {
   .Banner::after {
@@ -71,7 +71,7 @@
 .Banner .navbar .navbar-nav {
   background-color: red !important;
   margin-left: 127px !important;
-  gap: 20px !important;
+  gap: 35px !important;
   padding: 0px 50px 0px 50px !important;
   -webkit-clip-path: polygon(6% 0%, 100% -14%, 94% 100%, 0% 100%);
           clip-path: polygon(6% 0%, 100% -14%, 94% 100%, 0% 100%);
@@ -80,9 +80,12 @@
   .Banner .navbar .navbar-nav {
     background-color: #F8F9FA !important;
   }
-  .Banner .navbar .navbar-nav ul li a {
-    color: black !important;
+  .Banner .navbar .navbar-nav .nav-item .nav-link {
+    color: #000 !important;
   }
+}
+.Banner .navbar .navbar-nav .nav-item .nav-link {
+  color: #fff !important;
 }
 .Banner .navbar .navbar-nav .active {
   position: relative;
@@ -108,6 +111,8 @@
 }
 .Banner .herosection {
   padding-left: 320px !important;
+  position: relative;
+  z-index: 10;
 }
 .Banner .herosection h5 {
   font-size: 2rem;
@@ -184,6 +189,25 @@
   transform: rotate(23deg);
   animation: Line3Animation 6s infinite;
 }
+@media (max-width: 1000px) {
+  .Banner .line3 {
+    display: none;
+  }
+}
+.Banner .line4 {
+  width: 5px;
+  height: 200px;
+  background: red;
+  right: 47%;
+  top: 100px;
+  transform: rotate(23deg);
+  animation: Line4Animation 6s infinite;
+}
+@media (max-width: 1000px) {
+  .Banner .line4 {
+    display: none;
+  }
+}
 
 @keyframes Line1Animation {
   0%, 100% {
@@ -209,6 +233,14 @@
     transform: translateY(-400px) translateX(170px) rotate(24deg);
   }
 }
+@keyframes Line4Animation {
+  0%, 100% {
+    transform: translateY(0) translateX(84px) rotate(24deg);
+  }
+  50% {
+    transform: translateY(300px) translateX(-30px) rotate(24deg);
+  }
+}
 @media (max-width: 1280px) {
   @keyframes Line1Animation {
     0%, 100% {
@@ -232,6 +264,14 @@
     }
     50% {
       transform: translateY(-400px) translateX(129px) rotate(20deg);
+    }
+  }
+  @keyframes Line4Animation {
+    0%, 100% {
+      transform: translateY(0) translateX(113px) rotate(24deg);
+    }
+    50% {
+      transform: translateY(300px) translateX(19px) rotate(24deg);
     }
   }
 }/*# sourceMappingURL=style.css.map */
