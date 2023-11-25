@@ -6,15 +6,13 @@
 $tertiary: #3fb247;
 
 body {
-    font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
-$custom-theme-colors:map-merge($theme-colors, (
-  "tertiary": $tertiary
-));
+$custom-theme-colors: map-merge($theme-colors, ("tertiary": $tertiary));
 
 .teko-font {
-    font-family: 'Teko', sans-serif;
+  font-family: 'Teko', sans-serif;
 }
 
 
@@ -26,79 +24,51 @@ $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
 @import "../node_modules/bootstrap/scss/reboot";
 
 
-$utilities: map-merge(
-  $utilities,
-  (
-    "cursor": (
-      property: cursor,
+$utilities: map-merge($utilities,
+  ("cursor": (property: cursor,
       class: cursor,
       responsive: true,
       values: auto pointer grab,
-    )
-  )
-);
+    )));
 
 
-$utilities: map-merge(
-  $utilities,
-  (
-    "height": (
-      property: height,
+$utilities: map-merge($utilities,
+  ("height": (property: height,
       class: hp,
       responsive: true,
       values: 400px 300px 40px,
-    )
-  )
-);
+    )));
 
-$utilities: map-merge(
-  $utilities,
-  (
-    "width": (
-      property: width,
+$utilities: map-merge($utilities,
+  ("width": (property: width,
       class: wp,
       responsive: true,
       values: 400px 300px 200px 250px,
-    )
-  )
-);
+    )));
 
 
 
-$utilities: map-merge(
-  $utilities,
-  (
-    "bottom": (
-      property: bottom,
+$utilities: map-merge($utilities,
+  ("bottom": (property: bottom,
       class: bottomn,
       responsive: true,
-      values: -69px,
-    )
-  )
-);
-$utilities: map-merge(
-  $utilities,
-  (
-    "left": (
-      property: left,
+      values: -69px -75px -95px,
+    )));
+$utilities: map-merge($utilities,
+  ("left": (property: left,
       class: leftn,
       responsive: true,
-      values: -56px 0px -60px -159px 128px,
+      values: -56px 0px -60px -159px 8em,
     ),
-    "top":(
-        property: top,
-        class: topp,
-        responsive: true,
-        values: 77px 85px,
-    )
-  )
-);
+    "top":(property: top,
+      class: topp,
+      responsive: true,
+      values: 77px 85px 90px 34px,
+    )));
 
 
-$utilities: map-merge(
-  $utilities,
-  (
-    // "width": map-merge(
+$utilities: map-merge($utilities,
+  ( // "width": map-merge(
     //   map-get($utilities, "width"),
     //   (
     //     values: map-merge(
@@ -107,33 +77,25 @@ $utilities: map-merge(
     //     ),
     //   ),
     // ),
-    "colors": (
-      property: background-color,
+    "colors": (property: background-color,
       class: bg,
       responsive: true,
-      values: (
-        (babyred:#cf3737)
-        // Add more color definitions as needed
+      values: ((babyred:#cf3737) // Add more color definitions as needed
       ),
     ),
-    "viewport-height": map-merge(
-      map-get($utilities, "viewport-height"),
-      (
-        values: map-merge(
-          map-get(map-get($utilities, "viewport-height"), "values"),
+    "viewport-height": map-merge(map-get($utilities, "viewport-height"),
+      (values: map-merge(map-get(map-get($utilities, "viewport-height"), "values"),
           (80: 80vh),
         ),
       ),
     ),
 
-  )
-);
+  ));
 
 
 
 // ------------------ CUSTOMIZE COLORS --------------------
-$custom-colors: (
-  "baby-red":#cf3737,
+$custom-colors: ("baby-red":#cf3737,
 
 );
 $theme-colors: map-merge($theme-colors, $custom-colors);
@@ -145,13 +107,23 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 
 // CUSTOM RESPONSIVE
-@media( max-width:800px) {
-    .SecondImage {
-        width:64% !important;
-        left: 20% !important;
-    }
+@media(max-width:800px) {
+  .SecondImage {
+    width: 84% !important;
+    left: 7% !important;
+  }
+
 }
 
+@media (max-width:1000px) {
+  .mb-75 {
+    margin-bottom: 75px;
+  }
+
+  .none-md {
+    display: none !important;
+  }
+}
 
 
 

@@ -12575,8 +12575,16 @@ progress {
 
 @media (max-width: 800px) {
   .SecondImage {
-    width: 64% !important;
-    left: 20% !important;
+    width: 84% !important;
+    left: 7% !important;
+  }
+}
+@media (max-width: 1000px) {
+  .mb-75 {
+    margin-bottom: 75px;
+  }
+  .none-md {
+    display: none !important;
   }
 }
 /*!
@@ -20101,8 +20109,24 @@ textarea.form-control-lg {
   top: 85px !important;
 }
 
+.topp-90px {
+  top: 90px !important;
+}
+
+.topp-34px {
+  top: 34px !important;
+}
+
 .bottomn--69px {
   bottom: -69px !important;
+}
+
+.bottomn--75px {
+  bottom: -75px !important;
+}
+
+.bottomn--95px {
+  bottom: -95px !important;
 }
 
 .start-0 {
@@ -21849,8 +21873,8 @@ textarea.form-control-lg {
   left: -159px !important;
 }
 
-.leftn-128px {
-  left: 128px !important;
+.leftn-8em {
+  left: 8em !important;
 }
 
 .bg-babyred {
@@ -21926,8 +21950,20 @@ textarea.form-control-lg {
   .topp-sm-85px {
     top: 85px !important;
   }
+  .topp-sm-90px {
+    top: 90px !important;
+  }
+  .topp-sm-34px {
+    top: 34px !important;
+  }
   .bottomn-sm--69px {
     bottom: -69px !important;
+  }
+  .bottomn-sm--75px {
+    bottom: -75px !important;
+  }
+  .bottomn-sm--95px {
+    bottom: -95px !important;
   }
   .wp-sm-400px {
     width: 400px !important;
@@ -22468,8 +22504,8 @@ textarea.form-control-lg {
   .leftn-sm--159px {
     left: -159px !important;
   }
-  .leftn-sm-128px {
-    left: 128px !important;
+  .leftn-sm-8em {
+    left: 8em !important;
   }
   .bg-sm-babyred {
     background-color: #cf3737 !important;
@@ -22544,8 +22580,20 @@ textarea.form-control-lg {
   .topp-md-85px {
     top: 85px !important;
   }
+  .topp-md-90px {
+    top: 90px !important;
+  }
+  .topp-md-34px {
+    top: 34px !important;
+  }
   .bottomn-md--69px {
     bottom: -69px !important;
+  }
+  .bottomn-md--75px {
+    bottom: -75px !important;
+  }
+  .bottomn-md--95px {
+    bottom: -95px !important;
   }
   .wp-md-400px {
     width: 400px !important;
@@ -23086,8 +23134,8 @@ textarea.form-control-lg {
   .leftn-md--159px {
     left: -159px !important;
   }
-  .leftn-md-128px {
-    left: 128px !important;
+  .leftn-md-8em {
+    left: 8em !important;
   }
   .bg-md-babyred {
     background-color: #cf3737 !important;
@@ -23162,8 +23210,20 @@ textarea.form-control-lg {
   .topp-lg-85px {
     top: 85px !important;
   }
+  .topp-lg-90px {
+    top: 90px !important;
+  }
+  .topp-lg-34px {
+    top: 34px !important;
+  }
   .bottomn-lg--69px {
     bottom: -69px !important;
+  }
+  .bottomn-lg--75px {
+    bottom: -75px !important;
+  }
+  .bottomn-lg--95px {
+    bottom: -95px !important;
   }
   .wp-lg-400px {
     width: 400px !important;
@@ -23704,8 +23764,8 @@ textarea.form-control-lg {
   .leftn-lg--159px {
     left: -159px !important;
   }
-  .leftn-lg-128px {
-    left: 128px !important;
+  .leftn-lg-8em {
+    left: 8em !important;
   }
   .bg-lg-babyred {
     background-color: #cf3737 !important;
@@ -23780,8 +23840,20 @@ textarea.form-control-lg {
   .topp-xl-85px {
     top: 85px !important;
   }
+  .topp-xl-90px {
+    top: 90px !important;
+  }
+  .topp-xl-34px {
+    top: 34px !important;
+  }
   .bottomn-xl--69px {
     bottom: -69px !important;
+  }
+  .bottomn-xl--75px {
+    bottom: -75px !important;
+  }
+  .bottomn-xl--95px {
+    bottom: -95px !important;
   }
   .wp-xl-400px {
     width: 400px !important;
@@ -24322,8 +24394,8 @@ textarea.form-control-lg {
   .leftn-xl--159px {
     left: -159px !important;
   }
-  .leftn-xl-128px {
-    left: 128px !important;
+  .leftn-xl-8em {
+    left: 8em !important;
   }
   .bg-xl-babyred {
     background-color: #cf3737 !important;
@@ -24398,8 +24470,20 @@ textarea.form-control-lg {
   .topp-xxl-85px {
     top: 85px !important;
   }
+  .topp-xxl-90px {
+    top: 90px !important;
+  }
+  .topp-xxl-34px {
+    top: 34px !important;
+  }
   .bottomn-xxl--69px {
     bottom: -69px !important;
+  }
+  .bottomn-xxl--75px {
+    bottom: -75px !important;
+  }
+  .bottomn-xxl--95px {
+    bottom: -95px !important;
   }
   .wp-xxl-400px {
     width: 400px !important;
@@ -24940,8 +25024,8 @@ textarea.form-control-lg {
   .leftn-xxl--159px {
     left: -159px !important;
   }
-  .leftn-xxl-128px {
-    left: 128px !important;
+  .leftn-xxl-8em {
+    left: 8em !important;
   }
   .bg-xxl-babyred {
     background-color: #cf3737 !important;
