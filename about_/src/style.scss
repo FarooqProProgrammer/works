@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,400&family=Teko:wght@300;400;500;600;700&display=swap');
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+$tertiary: #3fb247;
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+$custom-theme-colors:map-merge($theme-colors, (
+  "tertiary": $tertiary
+));
+
+.teko-font {
+    font-family: 'Teko', sans-serif;
+}
+
+
+
+$theme-colors: map-merge($theme-colors, $custom-theme-colors);
+$theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
+
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "cursor": (
+      property: cursor,
+      class: cursor,
+      responsive: true,
+      values: auto pointer grab,
+    )
+  )
+);
+
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "height": (
+      property: height,
+      class: hp,
+      responsive: true,
+      values: 400px 300px 40px,
+    )
+  )
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "width": (
+      property: width,
+      class: wp,
+      responsive: true,
+      values: 400px 300px 200px 250px,
+    )
+  )
+);
+
+
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "bottom": (
+      property: bottom,
+      class: bottomn,
+      responsive: true,
+      values: -69px,
+    )
+  )
+);
+$utilities: map-merge(
+  $utilities,
+  (
+    "left": (
+      property: left,
+      class: leftn,
+      responsive: true,
+      values: -56px 0px -60px -159px 128px,
+    ),
+    "top":(
+        property: top,
+        class: topp,
+        responsive: true,
+        values: 77px 85px,
+    )
+  )
+);
+
+
+$utilities: map-merge(
+  $utilities,
+  (
+    // "width": map-merge(
+    //   map-get($utilities, "width"),
+    //   (
+    //     values: map-merge(
+    //       map-get(map-get($utilities, "width"), "values"),
+    //       (10: 10%),
+    //     ),
+    //   ),
+    // ),
+    "colors": (
+      property: background-color,
+      class: bg,
+      responsive: true,
+      values: (
+        (babyred:#cf3737)
+        // Add more color definitions as needed
+      ),
+    ),
+    "viewport-height": map-merge(
+      map-get($utilities, "viewport-height"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "viewport-height"), "values"),
+          (80: 80vh),
+        ),
+      ),
+    ),
+
+  )
+);
+
+
+
+// ------------------ CUSTOMIZE COLORS --------------------
+$custom-colors: (
+  "baby-red":#cf3737,
+
+);
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+
+
+
+
+
+
+// CUSTOM RESPONSIVE
+@media( max-width:800px) {
+    .SecondImage {
+        width:64% !important;
+        left: 20% !important;
+    }
+}
+
+
+
+
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss"
